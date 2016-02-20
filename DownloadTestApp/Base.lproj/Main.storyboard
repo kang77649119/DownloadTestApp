@@ -54,7 +54,7 @@
         <!--大文件下载-->
         <scene sceneID="jub-QZ-hdp">
             <objects>
-                <viewController id="Sm2-dM-O6E" sceneMemberID="viewController">
+                <viewController id="Sm2-dM-O6E" customClass="BigDataDownloadVC" customModule="DownloadTestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aBr-cg-wap"/>
                         <viewControllerLayoutGuide type="bottom" id="SyF-ZQ-kSH"/>
@@ -62,10 +62,21 @@
                     <view key="view" contentMode="scaleToFill" id="503-Pr-cyl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y2v-n3-lSz">
+                                <rect key="frame" x="85" y="178" width="150" height="2"/>
+                                <animations/>
+                                <color key="progressTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </progressView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="大文件下载" id="eWv-oh-BQU"/>
+                    <connections>
+                        <outlet property="downloadProgress" destination="503-Pr-cyl" id="OKA-TN-P0R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CK5-qS-tOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

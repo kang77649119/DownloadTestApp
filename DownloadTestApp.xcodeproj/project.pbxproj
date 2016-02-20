@@ -14,6 +14,7 @@
 		3F787F5A1C746F5F002261A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F787F581C746F5F002261A3 /* LaunchScreen.storyboard */; };
 		3F787F621C7476AC002261A3 /* ImageDownloadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F787F611C7476AC002261A3 /* ImageDownloadVC.swift */; };
 		3F787F641C747D72002261A3 /* SmallDataDownloadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F787F631C747D72002261A3 /* SmallDataDownloadVC.swift */; };
+		3F7FFC4A1C76C04A004E7977 /* BigDataDownloadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FFC491C76C04A004E7977 /* BigDataDownloadVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3F787F5B1C746F5F002261A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F787F611C7476AC002261A3 /* ImageDownloadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadVC.swift; sourceTree = "<group>"; };
 		3F787F631C747D72002261A3 /* SmallDataDownloadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallDataDownloadVC.swift; sourceTree = "<group>"; };
+		3F7FFC491C76C04A004E7977 /* BigDataDownloadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigDataDownloadVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				3F787F5B1C746F5F002261A3 /* Info.plist */,
 				3F787F611C7476AC002261A3 /* ImageDownloadVC.swift */,
 				3F787F631C747D72002261A3 /* SmallDataDownloadVC.swift */,
+				3F7FFC491C76C04A004E7977 /* BigDataDownloadVC.swift */,
 			);
 			path = DownloadTestApp;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				3F787F641C747D72002261A3 /* SmallDataDownloadVC.swift in Sources */,
 				3F787F521C746F5F002261A3 /* ViewController.swift in Sources */,
 				3F787F621C7476AC002261A3 /* ImageDownloadVC.swift in Sources */,
+				3F7FFC4A1C76C04A004E7977 /* BigDataDownloadVC.swift in Sources */,
 				3F787F501C746F5F002261A3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +298,7 @@
 				3F787F601C746F5F002261A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

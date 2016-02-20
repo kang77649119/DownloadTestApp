@@ -24,6 +24,7 @@ class SmallDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
         
         let request = NSURLRequest(URL: url!)
         
+        // 定义请求
         NSURLConnection(request: request, delegate: self)
        
     }
@@ -37,12 +38,11 @@ class SmallDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
         print(connResponse)
         
         contentLength = (connResponse.allHeaderFields as NSDictionary).objectForKey("Content-Length") as? String
+        
         print(contentLength)
         fileData = NSMutableData()
         
         print("响应开始")
-        
-        
     }
     
     // 接收数据
