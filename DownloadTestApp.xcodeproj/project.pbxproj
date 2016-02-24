@@ -7,19 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F69C2E71C7C30680047096F /* NSOutoutStreamDownloadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69C2E61C7C30680047096F /* NSOutoutStreamDownloadVC.swift */; };
 		3F787F501C746F5F002261A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F787F4F1C746F5F002261A3 /* AppDelegate.swift */; };
 		3F787F521C746F5F002261A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F787F511C746F5F002261A3 /* ViewController.swift */; };
 		3F787F551C746F5F002261A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F787F531C746F5F002261A3 /* Main.storyboard */; };
 		3F787F571C746F5F002261A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F787F561C746F5F002261A3 /* Assets.xcassets */; };
 		3F787F5A1C746F5F002261A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F787F581C746F5F002261A3 /* LaunchScreen.storyboard */; };
-		3F787F621C7476AC002261A3 /* ImageDownloadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F787F611C7476AC002261A3 /* ImageDownloadVC.swift */; };
-		3F787F641C747D72002261A3 /* SmallDataDownloadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F787F631C747D72002261A3 /* SmallDataDownloadVC.swift */; };
-		3F7FFC4A1C76C04A004E7977 /* BigDataDownloadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FFC491C76C04A004E7977 /* BigDataDownloadVC.swift */; };
+		3FC612FF1C7DA4C900204A45 /* ImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC612FD1C7DA4C900204A45 /* ImageDownload.swift */; };
+		3FC613001C7DA4C900204A45 /* ImageDownload.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC612FE1C7DA4C900204A45 /* ImageDownload.xib */; };
+		3FC613031C7DA75400204A45 /* SmallDataDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC613011C7DA75400204A45 /* SmallDataDownload.swift */; };
+		3FC613041C7DA75400204A45 /* SmallDataDownload.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC613021C7DA75400204A45 /* SmallDataDownload.xib */; };
+		3FC613071C7DA79400204A45 /* BigDataDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC613051C7DA79400204A45 /* BigDataDownload.swift */; };
+		3FC613081C7DA79400204A45 /* BigDataDownload.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC613061C7DA79400204A45 /* BigDataDownload.xib */; };
+		3FC6130B1C7DA7E100204A45 /* NSOutputStreamDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC613091C7DA7E100204A45 /* NSOutputStreamDownload.swift */; };
+		3FC6130C1C7DA7E100204A45 /* NSOutputStreamDownload.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC6130A1C7DA7E100204A45 /* NSOutputStreamDownload.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F69C2E61C7C30680047096F /* NSOutoutStreamDownloadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSOutoutStreamDownloadVC.swift; sourceTree = "<group>"; };
 		3F787F4C1C746F5F002261A3 /* DownloadTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownloadTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F787F4F1C746F5F002261A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F787F511C746F5F002261A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,9 +30,14 @@
 		3F787F561C746F5F002261A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F787F591C746F5F002261A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F787F5B1C746F5F002261A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F787F611C7476AC002261A3 /* ImageDownloadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadVC.swift; sourceTree = "<group>"; };
-		3F787F631C747D72002261A3 /* SmallDataDownloadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallDataDownloadVC.swift; sourceTree = "<group>"; };
-		3F7FFC491C76C04A004E7977 /* BigDataDownloadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigDataDownloadVC.swift; sourceTree = "<group>"; };
+		3FC612FD1C7DA4C900204A45 /* ImageDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownload.swift; sourceTree = "<group>"; };
+		3FC612FE1C7DA4C900204A45 /* ImageDownload.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageDownload.xib; sourceTree = "<group>"; };
+		3FC613011C7DA75400204A45 /* SmallDataDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallDataDownload.swift; sourceTree = "<group>"; };
+		3FC613021C7DA75400204A45 /* SmallDataDownload.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmallDataDownload.xib; sourceTree = "<group>"; };
+		3FC613051C7DA79400204A45 /* BigDataDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigDataDownload.swift; sourceTree = "<group>"; };
+		3FC613061C7DA79400204A45 /* BigDataDownload.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BigDataDownload.xib; sourceTree = "<group>"; };
+		3FC613091C7DA7E100204A45 /* NSOutputStreamDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSOutputStreamDownload.swift; sourceTree = "<group>"; };
+		3FC6130A1C7DA7E100204A45 /* NSOutputStreamDownload.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSOutputStreamDownload.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +70,30 @@
 		3F787F4E1C746F5F002261A3 /* DownloadTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				3FC6130D1C7DAE5300204A45 /* Download */,
 				3F787F4F1C746F5F002261A3 /* AppDelegate.swift */,
 				3F787F511C746F5F002261A3 /* ViewController.swift */,
 				3F787F531C746F5F002261A3 /* Main.storyboard */,
 				3F787F561C746F5F002261A3 /* Assets.xcassets */,
 				3F787F581C746F5F002261A3 /* LaunchScreen.storyboard */,
 				3F787F5B1C746F5F002261A3 /* Info.plist */,
-				3F787F611C7476AC002261A3 /* ImageDownloadVC.swift */,
-				3F787F631C747D72002261A3 /* SmallDataDownloadVC.swift */,
-				3F7FFC491C76C04A004E7977 /* BigDataDownloadVC.swift */,
-				3F69C2E61C7C30680047096F /* NSOutoutStreamDownloadVC.swift */,
 			);
 			path = DownloadTestApp;
+			sourceTree = "<group>";
+		};
+		3FC6130D1C7DAE5300204A45 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				3FC612FD1C7DA4C900204A45 /* ImageDownload.swift */,
+				3FC612FE1C7DA4C900204A45 /* ImageDownload.xib */,
+				3FC613011C7DA75400204A45 /* SmallDataDownload.swift */,
+				3FC613021C7DA75400204A45 /* SmallDataDownload.xib */,
+				3FC613051C7DA79400204A45 /* BigDataDownload.swift */,
+				3FC613061C7DA79400204A45 /* BigDataDownload.xib */,
+				3FC613091C7DA7E100204A45 /* NSOutputStreamDownload.swift */,
+				3FC6130A1C7DA7E100204A45 /* NSOutputStreamDownload.xib */,
+			);
+			name = Download;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +154,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC6130C1C7DA7E100204A45 /* NSOutputStreamDownload.xib in Resources */,
 				3F787F5A1C746F5F002261A3 /* LaunchScreen.storyboard in Resources */,
+				3FC613041C7DA75400204A45 /* SmallDataDownload.xib in Resources */,
+				3FC613001C7DA4C900204A45 /* ImageDownload.xib in Resources */,
 				3F787F571C746F5F002261A3 /* Assets.xcassets in Resources */,
+				3FC613081C7DA79400204A45 /* BigDataDownload.xib in Resources */,
 				3F787F551C746F5F002261A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,12 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F787F641C747D72002261A3 /* SmallDataDownloadVC.swift in Sources */,
 				3F787F521C746F5F002261A3 /* ViewController.swift in Sources */,
-				3F787F621C7476AC002261A3 /* ImageDownloadVC.swift in Sources */,
-				3F7FFC4A1C76C04A004E7977 /* BigDataDownloadVC.swift in Sources */,
+				3FC6130B1C7DA7E100204A45 /* NSOutputStreamDownload.swift in Sources */,
+				3FC613031C7DA75400204A45 /* SmallDataDownload.swift in Sources */,
+				3FC612FF1C7DA4C900204A45 /* ImageDownload.swift in Sources */,
+				3FC613071C7DA79400204A45 /* BigDataDownload.swift in Sources */,
 				3F787F501C746F5F002261A3 /* AppDelegate.swift in Sources */,
-				3F69C2E71C7C30680047096F /* NSOutoutStreamDownloadVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

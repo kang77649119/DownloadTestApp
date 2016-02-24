@@ -16,40 +16,6 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inp-vM-Ab0">
-                                <rect key="frame" x="20" y="87" width="280" height="67"/>
-                                <animations/>
-                                <state key="normal" title="图片下载  &gt;"/>
-                                <connections>
-                                    <segue destination="Xi2-nc-h30" kind="push" id="w6o-kk-Edl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lP-o5-LSx">
-                                <rect key="frame" x="20" y="199" width="280" height="69"/>
-                                <animations/>
-                                <state key="normal" title="小文件下载  &gt;"/>
-                                <connections>
-                                    <segue destination="faL-at-M0E" kind="push" id="uDQ-FX-XOy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAj-bh-WZM">
-                                <rect key="frame" x="20" y="439" width="280" height="69"/>
-                                <animations/>
-                                <state key="normal" title="使用NSOutputStream下载大文件"/>
-                                <connections>
-                                    <segue destination="sAJ-vg-B6A" kind="push" id="UKB-IA-AkP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHq-CC-4iY">
-                                <rect key="frame" x="20" y="322" width="280" height="69"/>
-                                <animations/>
-                                <state key="normal" title="大文件下载  &gt;"/>
-                                <connections>
-                                    <segue destination="Sm2-dM-O6E" kind="push" id="hB0-xL-rOP"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -57,107 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="591" y="382"/>
-        </scene>
-        <!--大文件下载-->
-        <scene sceneID="jub-QZ-hdp">
-            <objects>
-                <viewController id="Sm2-dM-O6E" customClass="BigDataDownloadVC" customModule="DownloadTestApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aBr-cg-wap"/>
-                        <viewControllerLayoutGuide type="bottom" id="SyF-ZQ-kSH"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="503-Pr-cyl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y2v-n3-lSz">
-                                <rect key="frame" x="85" y="178" width="150" height="2"/>
-                                <animations/>
-                                <color key="progressTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="trackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </progressView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="大文件下载" id="eWv-oh-BQU"/>
-                    <connections>
-                        <outlet property="downloadProgress" destination="503-Pr-cyl" id="OKA-TN-P0R"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CK5-qS-tOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1419" y="382"/>
-        </scene>
-        <!--Outout Stream DownloadVC-->
-        <scene sceneID="t8i-lz-6AL">
-            <objects>
-                <viewController id="sAJ-vg-B6A" customClass="NSOutoutStreamDownloadVC" customModule="DownloadTestApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="e5u-Vo-0AN"/>
-                        <viewControllerLayoutGuide type="bottom" id="4xI-aO-Lcc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1gS-1j-2Jf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Mn1-og-dhj"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vtl-2o-mMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="591" y="1065"/>
-        </scene>
-        <!--小文件下载-->
-        <scene sceneID="Itt-7K-eQa">
-            <objects>
-                <viewController id="faL-at-M0E" customClass="SmallDataDownloadVC" customModule="DownloadTestApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="f5E-06-9Qf"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ers-ks-KPs"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="617-AM-8xO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="小文件下载" id="biv-fO-dgI"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ij-8d-rRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1029" y="748"/>
-        </scene>
-        <!--图片下载-->
-        <scene sceneID="tuZ-1p-wOU">
-            <objects>
-                <viewController id="Xi2-nc-h30" customClass="ImageDownloadVC" customModule="DownloadTestApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="k8W-DU-HWb"/>
-                        <viewControllerLayoutGuide type="bottom" id="wxj-Dj-PdB"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="q2s-Gf-WUd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tIP-1S-O5f">
-                                <rect key="frame" x="20" y="130" width="280" height="307"/>
-                                <animations/>
-                            </imageView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="图片下载" id="1SB-Md-QLB"/>
-                    <connections>
-                        <outlet property="imgView" destination="tIP-1S-O5f" id="ofF-nU-Qyr"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pLK-ge-2eJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1029" y="-48"/>
+            <point key="canvasLocation" x="788" y="243"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Q6c-Vz-GKh">
@@ -174,7 +40,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="whp-w4-bWP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="382"/>
+            <point key="canvasLocation" x="377" y="243"/>
         </scene>
     </scenes>
 </document>

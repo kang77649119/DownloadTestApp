@@ -1,20 +1,20 @@
 //
-//  BigDataDownloadVC.swift
+//  BigDataDownload.swift
 //  DownloadTestApp
 //
-//  Created by 也许、 on 16/2/19.
+//  Created by 也许、 on 16/2/24.
 //  Copyright © 2016年 K. All rights reserved.
 //
 
 import UIKit
 
-class BigDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
-    
+class BigDataDownload: UIViewController,NSURLConnectionDataDelegate {
+
     // 下载进度条
     @IBOutlet var downloadProgress: UIView!
     
     // 下载文件路径
-    let filePath = "http://mp4.68mtv.com/mp46/%E6%9B%BE%E6%98%A5%E5%B9%B4-%E5%8F%AB%E4%BD%A0%E4%B8%80%E5%A3%B0%E8%80%81%E5%A9%86dj%5B68mtv.com%5D.mp4"
+    let filePath = "http://lx.cdn.baidupcs.com/file/de8d8796ee546c5ae370f8f0e45537fb?bkt=p2-nj-739&xcode=1791e8c49ea567e02748e632bc49b8aa229dcdb90ad0ed12837047dfb5e85c39&fid=338912528-250528-293914034843258&time=1456304580&sign=FDTAXERBH-DCb740ccc5511e5e8fedcff06b081203-Mwm%2Bc7vJ4cpA9ztP9riKtvdqc%2FM%3D&to=hc&fm=Nin,B,U,nc&sta_dx=10&sta_cs=502&sta_ft=mp4&sta_ct=7&fm2=Ningbo,B,U,nc&newver=1&newfm=1&secfm=1&flow_ver=3&expires=8h&rt=pr&r=770951300&mlogid=1268889184745400944&vuk=338912528&vbdid=2235946378&fin=01-语法须知.mp4&uta=0&rtype=0&iv=1&isw=0&dp-logid=1268889184745400944&dp-callid=0.1.1"
     
     // 写入文件路径
     var targetFilePath:String?
@@ -27,7 +27,15 @@ class BigDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
     
     // 文件处理对象
     var fileHandle:NSFileHandle?
-
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,7 +47,7 @@ class BigDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
     func download() {
         
         // 下载请求
-        let request = NSURLRequest(URL: NSURL(string: filePath)!)
+        let request = NSURLRequest(URL: NSURL(string: filePath.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!)!)
         NSURLConnection(request: request, delegate: self)
         
         // 设置写入文件路径
@@ -50,7 +58,7 @@ class BigDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
     }
     
     /**
-        接收数据
+     接收数据
      */
     func connection(connection: NSURLConnection, didReceiveData data: NSData) {
         
@@ -73,7 +81,7 @@ class BigDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
     }
     
     /**
-        响应数据
+     响应数据
      */
     func connection(connection: NSURLConnection, didReceiveResponse response: NSURLResponse) {
         
@@ -91,7 +99,7 @@ class BigDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
     }
     
     /**
-        接收完成
+     接收完成
      */
     func connectionDidFinishLoading(connection: NSURLConnection) {
         
@@ -102,12 +110,5 @@ class BigDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
         print(self.targetFilePath)
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
 
 }
