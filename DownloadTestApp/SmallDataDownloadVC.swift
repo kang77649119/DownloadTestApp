@@ -10,9 +10,9 @@ import UIKit
 
 class SmallDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
     
-    let filePath = "http://9.qqmp3.com:82/gg2015/music2013/20151214/n03.mp3"
+    let filePath = "http://mp4.68mtv.com/mp46/%E6%9B%BE%E6%98%A5%E5%B9%B4-%E5%8F%AB%E4%BD%A0%E4%B8%80%E5%A3%B0%E8%80%81%E5%A9%86dj%5B68mtv.com%5D.mp4"
     
-    var contentLength:String?
+    var contentLength:Int?
     
     // 存储接收到的二进制数据
     var fileData:NSMutableData?
@@ -35,9 +35,7 @@ class SmallDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
         
         let connResponse = response as! NSHTTPURLResponse
         
-        print(connResponse)
-        
-        contentLength = (connResponse.allHeaderFields as NSDictionary).objectForKey("Content-Length") as? String
+        self.contentLength = connResponse.allHeaderFields["Content-Length"]?.integerValue
         
         print(contentLength)
         fileData = NSMutableData()
@@ -49,7 +47,7 @@ class SmallDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
     func connection(connection: NSURLConnection, didReceiveData data: NSData) {
         
         fileData?.appendData(data)
-        let present = 1.0 * Float(fileData!.length) / Float(contentLength!)!
+        let present = 1.0 * Float(fileData!.length) / Float(contentLength!)
         
         print(NSString(format: "已下载%.2f%%", present * 100))
     }
@@ -64,7 +62,7 @@ class SmallDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
         print("沙盒路径------\(cachePath)")
         
         // 文件路径
-        let targetPath = cachePath.stringByAppendingPathComponent("music.mp3")
+        let targetPath = cachePath.stringByAppendingPathComponent("music.mp4")
         
         guard let _ = fileData else {
             print("数据为空")

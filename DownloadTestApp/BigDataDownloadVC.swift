@@ -14,13 +14,13 @@ class BigDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
     @IBOutlet var downloadProgress: UIView!
     
     // 下载文件路径
-    let filePath = "http://9.qqmp3.com:82/gg2015/music2013/20151214/n03.mp3"
+    let filePath = "http://mp4.68mtv.com/mp46/%E6%9B%BE%E6%98%A5%E5%B9%B4-%E5%8F%AB%E4%BD%A0%E4%B8%80%E5%A3%B0%E8%80%81%E5%A9%86dj%5B68mtv.com%5D.mp4"
     
     // 写入文件路径
     var targetFilePath:String?
     
     // 文件大小
-    var contentLength:String?
+    var contentLength:Int?
     
     // 当前接收到的数据大小
     var currentLength:Float?
@@ -45,7 +45,7 @@ class BigDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
         // 设置写入文件路径
         let cachePath = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true).last! as NSString
         
-        self.targetFilePath = cachePath.stringByAppendingPathComponent("bigData.mp3")
+        self.targetFilePath = cachePath.stringByAppendingPathComponent("bigData.mp4")
         
     }
     
@@ -61,7 +61,7 @@ class BigDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
         // 直接写入沙盒文件中
         self.fileHandle?.writeData(data)
         
-        let percentum = self.currentLength! / Float(self.contentLength!)!
+        let percentum = self.currentLength! / Float(self.contentLength!)
         
         print( String(format: "已下载%.2f%%", percentum * 100))
         
@@ -79,8 +79,7 @@ class BigDataDownloadVC: UIViewController,NSURLConnectionDataDelegate {
         
         // 获取下载文件大小
         let connResp = response as! NSHTTPURLResponse
-        let responseDic = connResp.allHeaderFields as NSDictionary
-        self.contentLength = responseDic.objectForKey("Content-Length") as? String
+        self.contentLength = connResp.allHeaderFields["Content-Length"]?.integerValue
         self.currentLength = 0
         
         // 创建空文件

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F69C2E71C7C30680047096F /* NSOutoutStreamDownloadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69C2E61C7C30680047096F /* NSOutoutStreamDownloadVC.swift */; };
 		3F787F501C746F5F002261A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F787F4F1C746F5F002261A3 /* AppDelegate.swift */; };
 		3F787F521C746F5F002261A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F787F511C746F5F002261A3 /* ViewController.swift */; };
 		3F787F551C746F5F002261A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F787F531C746F5F002261A3 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F69C2E61C7C30680047096F /* NSOutoutStreamDownloadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSOutoutStreamDownloadVC.swift; sourceTree = "<group>"; };
 		3F787F4C1C746F5F002261A3 /* DownloadTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownloadTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F787F4F1C746F5F002261A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F787F511C746F5F002261A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				3F787F611C7476AC002261A3 /* ImageDownloadVC.swift */,
 				3F787F631C747D72002261A3 /* SmallDataDownloadVC.swift */,
 				3F7FFC491C76C04A004E7977 /* BigDataDownloadVC.swift */,
+				3F69C2E61C7C30680047096F /* NSOutoutStreamDownloadVC.swift */,
 			);
 			path = DownloadTestApp;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				3F787F621C7476AC002261A3 /* ImageDownloadVC.swift in Sources */,
 				3F7FFC4A1C76C04A004E7977 /* BigDataDownloadVC.swift in Sources */,
 				3F787F501C746F5F002261A3 /* AppDelegate.swift in Sources */,
+				3F69C2E71C7C30680047096F /* NSOutoutStreamDownloadVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
