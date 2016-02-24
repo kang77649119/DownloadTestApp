@@ -12,7 +12,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     let cellId = "cellId"
     
-    let datas = ["图片下载","小文件下载","大文件下载","使用NSOutputStream下载"]
+    let datas = ["图片下载","小文件下载","大文件下载","使用NSOutputStream下载","使用NSURLSessionDownloadTask下载"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,7 +68,12 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                 let outputStreamDownloadVC = NSOutputStreamDownload(nibName: "BigDataDownload", bundle: NSBundle.mainBundle())
                 outputStreamDownloadVC.title = self.datas[indexPath.row]
                 self.navigationController?.pushViewController(outputStreamDownloadVC, animated: true)
-                
+            
+            case 4:
+                let downloadTaskVC = NSURLSessionDownloadTask(nibName: "NSURLSessionDownloadTask", bundle: NSBundle.mainBundle())
+                downloadTaskVC.title = self.datas[indexPath.row]
+                self.navigationController?.pushViewController(downloadTaskVC, animated: true)
+            
             default:
                 return
         }
