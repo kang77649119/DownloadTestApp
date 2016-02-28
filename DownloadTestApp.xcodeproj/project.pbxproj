@@ -12,10 +12,14 @@
 		3F787F551C746F5F002261A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F787F531C746F5F002261A3 /* Main.storyboard */; };
 		3F787F571C746F5F002261A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F787F561C746F5F002261A3 /* Assets.xcassets */; };
 		3F787F5A1C746F5F002261A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F787F581C746F5F002261A3 /* LaunchScreen.storyboard */; };
-		3F7E1E021C7DE77600344616 /* NSURLSessionDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E1E001C7DE77600344616 /* NSURLSessionDownloadTask.swift */; };
+		3F7E1E021C7DE77600344616 /* NSURLSessionDownloadTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E1E001C7DE77600344616 /* NSURLSessionDownloadTaskVC.swift */; };
 		3F7E1E031C7DE77600344616 /* NSURLSessionDownloadTask.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7E1E011C7DE77600344616 /* NSURLSessionDownloadTask.xib */; };
 		3F7E1E081C7DEE7200344616 /* NSURLSessionDownloadDelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E1E061C7DEE7200344616 /* NSURLSessionDownloadDelegateVC.swift */; };
 		3F7E1E091C7DEE7200344616 /* NSURLSessionDownloadDelegateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7E1E071C7DEE7200344616 /* NSURLSessionDownloadDelegateVC.xib */; };
+		3F91D64C1C829F9A003F15B5 /* BreakPointDownloadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91D64A1C829F9A003F15B5 /* BreakPointDownloadVC.swift */; };
+		3F91D64D1C829F9A003F15B5 /* BreakPointDownloadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F91D64B1C829F9A003F15B5 /* BreakPointDownloadVC.xib */; };
+		3F91D6501C82E25F003F15B5 /* UploadFileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91D64E1C82E25F003F15B5 /* UploadFileVC.swift */; };
+		3F91D6511C82E25F003F15B5 /* UploadFileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F91D64F1C82E25F003F15B5 /* UploadFileVC.xib */; };
 		3FC612FF1C7DA4C900204A45 /* ImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC612FD1C7DA4C900204A45 /* ImageDownload.swift */; };
 		3FC613001C7DA4C900204A45 /* ImageDownload.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC612FE1C7DA4C900204A45 /* ImageDownload.xib */; };
 		3FC613031C7DA75400204A45 /* SmallDataDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC613011C7DA75400204A45 /* SmallDataDownload.swift */; };
@@ -34,10 +38,14 @@
 		3F787F561C746F5F002261A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F787F591C746F5F002261A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F787F5B1C746F5F002261A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F7E1E001C7DE77600344616 /* NSURLSessionDownloadTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLSessionDownloadTask.swift; sourceTree = "<group>"; };
+		3F7E1E001C7DE77600344616 /* NSURLSessionDownloadTaskVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLSessionDownloadTaskVC.swift; sourceTree = "<group>"; };
 		3F7E1E011C7DE77600344616 /* NSURLSessionDownloadTask.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLSessionDownloadTask.xib; sourceTree = "<group>"; };
 		3F7E1E061C7DEE7200344616 /* NSURLSessionDownloadDelegateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLSessionDownloadDelegateVC.swift; sourceTree = "<group>"; };
 		3F7E1E071C7DEE7200344616 /* NSURLSessionDownloadDelegateVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLSessionDownloadDelegateVC.xib; sourceTree = "<group>"; };
+		3F91D64A1C829F9A003F15B5 /* BreakPointDownloadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakPointDownloadVC.swift; sourceTree = "<group>"; };
+		3F91D64B1C829F9A003F15B5 /* BreakPointDownloadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BreakPointDownloadVC.xib; sourceTree = "<group>"; };
+		3F91D64E1C82E25F003F15B5 /* UploadFileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFileVC.swift; sourceTree = "<group>"; };
+		3F91D64F1C82E25F003F15B5 /* UploadFileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadFileVC.xib; sourceTree = "<group>"; };
 		3FC612FD1C7DA4C900204A45 /* ImageDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownload.swift; sourceTree = "<group>"; };
 		3FC612FE1C7DA4C900204A45 /* ImageDownload.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageDownload.xib; sourceTree = "<group>"; };
 		3FC613011C7DA75400204A45 /* SmallDataDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallDataDownload.swift; sourceTree = "<group>"; };
@@ -100,10 +108,14 @@
 				3FC613061C7DA79400204A45 /* BigDataDownload.xib */,
 				3FC613091C7DA7E100204A45 /* NSOutputStreamDownload.swift */,
 				3FC6130A1C7DA7E100204A45 /* NSOutputStreamDownload.xib */,
-				3F7E1E001C7DE77600344616 /* NSURLSessionDownloadTask.swift */,
+				3F7E1E001C7DE77600344616 /* NSURLSessionDownloadTaskVC.swift */,
 				3F7E1E011C7DE77600344616 /* NSURLSessionDownloadTask.xib */,
 				3F7E1E061C7DEE7200344616 /* NSURLSessionDownloadDelegateVC.swift */,
 				3F7E1E071C7DEE7200344616 /* NSURLSessionDownloadDelegateVC.xib */,
+				3F91D64A1C829F9A003F15B5 /* BreakPointDownloadVC.swift */,
+				3F91D64B1C829F9A003F15B5 /* BreakPointDownloadVC.xib */,
+				3F91D64E1C82E25F003F15B5 /* UploadFileVC.swift */,
+				3F91D64F1C82E25F003F15B5 /* UploadFileVC.xib */,
 			);
 			name = Download;
 			sourceTree = "<group>";
@@ -172,7 +184,9 @@
 				3FC613041C7DA75400204A45 /* SmallDataDownload.xib in Resources */,
 				3FC613001C7DA4C900204A45 /* ImageDownload.xib in Resources */,
 				3F787F571C746F5F002261A3 /* Assets.xcassets in Resources */,
+				3F91D6511C82E25F003F15B5 /* UploadFileVC.xib in Resources */,
 				3FC613081C7DA79400204A45 /* BigDataDownload.xib in Resources */,
+				3F91D64D1C829F9A003F15B5 /* BreakPointDownloadVC.xib in Resources */,
 				3F787F551C746F5F002261A3 /* Main.storyboard in Resources */,
 				3F7E1E091C7DEE7200344616 /* NSURLSessionDownloadDelegateVC.xib in Resources */,
 			);
@@ -185,12 +199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F91D64C1C829F9A003F15B5 /* BreakPointDownloadVC.swift in Sources */,
 				3F7E1E081C7DEE7200344616 /* NSURLSessionDownloadDelegateVC.swift in Sources */,
 				3F787F521C746F5F002261A3 /* ViewController.swift in Sources */,
 				3FC6130B1C7DA7E100204A45 /* NSOutputStreamDownload.swift in Sources */,
-				3F7E1E021C7DE77600344616 /* NSURLSessionDownloadTask.swift in Sources */,
+				3F7E1E021C7DE77600344616 /* NSURLSessionDownloadTaskVC.swift in Sources */,
 				3FC613031C7DA75400204A45 /* SmallDataDownload.swift in Sources */,
 				3FC612FF1C7DA4C900204A45 /* ImageDownload.swift in Sources */,
+				3F91D6501C82E25F003F15B5 /* UploadFileVC.swift in Sources */,
 				3FC613071C7DA79400204A45 /* BigDataDownload.swift in Sources */,
 				3F787F501C746F5F002261A3 /* AppDelegate.swift in Sources */,
 			);

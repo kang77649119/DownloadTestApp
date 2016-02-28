@@ -12,7 +12,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     let cellId = "cellId"
     
-    let datas = ["图片下载","小文件下载","大文件下载","使用NSOutputStream下载","使用NSURLSessionDownloadTask下载","监听NSURLSession下载进度"]
+    let datas = ["图片下载","小文件下载","大文件下载","使用NSOutputStream下载","使用NSURLSessionDownloadTask下载","监听NSURLSession下载进度","断点下载(未完成)","上传文件"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,7 +70,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                 self.navigationController?.pushViewController(outputStreamDownloadVC, animated: true)
             
             case 4:
-                let downloadTaskVC = NSURLSessionDownloadTask(nibName: "NSURLSessionDownloadTask", bundle: NSBundle.mainBundle())
+                let downloadTaskVC = NSURLSessionDownloadTaskVC(nibName: "NSURLSessionDownloadTask", bundle: NSBundle.mainBundle())
                 downloadTaskVC.title = self.datas[indexPath.row]
                 self.navigationController?.pushViewController(downloadTaskVC, animated: true)
             
@@ -78,6 +78,16 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                 let downloadDelegateVC = NSURLSessionDownloadDelegateVC(nibName: "NSURLSessionDownloadDelegateVC", bundle: NSBundle.mainBundle())
                 downloadDelegateVC.title = self.datas[indexPath.row]
                 self.navigationController?.pushViewController(downloadDelegateVC, animated: true)
+            
+            case 6:
+                let breakPointDownloadVC = BreakPointDownloadVC(nibName: "BreakPointDownloadVC", bundle: NSBundle.mainBundle())
+                breakPointDownloadVC.title = self.datas[indexPath.row]
+                self.navigationController?.pushViewController(breakPointDownloadVC, animated: true)
+            
+            case 7:
+                let uploadFileVC = UploadFileVC(nibName: "UploadFileVC", bundle: NSBundle.mainBundle())
+                uploadFileVC.title = self.datas[indexPath.row]
+                self.navigationController?.pushViewController(uploadFileVC, animated: true)
             
             default:
                 return
